@@ -169,7 +169,7 @@ class Sentinel2Driver():
         self.load_geom()
         #if self.resolution_angle != self.resolution:
         self.geom=self.geom.interp(x=self.prod.x, y=self.prod.y, method='nearest')
-        self.prod = xr.merge([self.prod, self.geom])
+        self.prod = xr.merge([self.prod, self.geom],compat='override')
         del self.geom
 
         # add native metadata
