@@ -4,7 +4,7 @@ docopt
 eoreader>=0.21.1
 xmltodict
 rasterio
-netCDF4
+h5py
 numba
 numpy
 pandas>=2.0.3
